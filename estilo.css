@@ -1,0 +1,78 @@
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Organiza as três seções lado a lado usando Flexbox */
+.portal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 24px;
+}
+
+/* Classe aplicada igualmente às três seções */
+.secao {
+    flex: 1;
+    padding: 18px;
+    background-color: rgb(183, 180, 180);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000018;
+}
+
+/* Classe para padronizar os títulos das seções */
+.titulo-secao {
+    margin-bottom: 14px;
+    color: #001d60;
+    text-align: center;
+}
+
+/* Imagens ajustadas ao tamanho da seção */
+figure {
+    margin-bottom: 20px;
+}
+
+figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Classe para padronizar as legendas das imagens */
+.legenda {
+    margin-top: 5px;
+    color: #475569;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* ID aplicado ao rodapé */
+footer {
+    padding: 18px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+}
+
+/* Em telas menores, as seções ficam uma abaixo da outra */
+@media (max-width: 700px) {
+    .portal {
+        flex-direction: column;
+    }
+}
